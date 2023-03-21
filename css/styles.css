@@ -209,6 +209,7 @@ img {
 
 .button {
   display: flex;
+  text-align: center;
   align-items: center;
   margin-right: auto;
   margin-left: auto;
@@ -216,7 +217,7 @@ img {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  text-align: center;
+
   border: 1px solid transparent;
   cursor: pointer;
 }
@@ -507,7 +508,6 @@ img {
   width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
-  gap: 120px;
 }
 
 .footer .logotype {
@@ -526,6 +526,7 @@ img {
 
 .social-footer {
   color: var(--white-color);
+  margin-left: 120px;
 }
 
 .social-list-footer {
@@ -557,6 +558,59 @@ img {
 .social-footer-link:focus {
   background-color: var(--green-color);
 }
+
+.footer-subscribe {
+  color: var(--white-color);
+  margin-left: 80px;
+}
+
+.button.subscribe {
+  padding: 8px 24px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: var(--white-color);
+  background-color: var(--primary-brand-color);
+
+  transition: background-color var(--transition-time) var(--cubic);
+}
+
+.button.subscribe:hover,
+.button.subscribe:focus {
+  background-color: var(--pressed-state-color);
+}
+
+.icon-send {
+  margin-left: 16px;
+  fill: var(--white-color);
+}
+
+.footer-input {
+  width: 264px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  outline: transparent;
+  padding-left: 16px;
+  background-color: var(--dark-color);
+}
+
+.fullwidth {
+  width: 100%;
+}
+
+.footer-input::placeholder {
+  color: var(--white-color);
+  font-size: 12px;
+  line-height: 2;
+}
+
+.footer-wrapper {
+  display: flex;
+  gap: 24px;
+  margin-top: 16px;
+}
+
+/*MODAL*/
 
 .backdrop {
   position: fixed;
@@ -615,6 +669,10 @@ img {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+}
+
+.modal-container {
+  padding: 24px 24px 24px 24px;
 }
 
 .modal-form-group {
