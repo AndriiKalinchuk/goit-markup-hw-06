@@ -623,13 +623,26 @@
           </ul>
         </div>
         <div class="footer-subscribe">
-          <p>Subscribe</p> 
+          <p>Subscribe</p>
           <form action="E-mail">
             <span class="footer-wrapper">
-              <input class="footer-input" type="E-mail" name="E-mail" placeholder="E-mail">
-              <button class="button subscribe" type="submit"  aria-label="subscribe-button">Subscribe <svg class="icon-send" width="24" height="20">
-                <use href="./images/icons.svg/symbol-defs.svg#icon-send"></use>
-              </svg>
+              <input
+                class="footer-input"
+                type="E-mail"
+                name="E-mail"
+                placeholder="E-mail"
+              />
+              <button
+                class="button subscribe"
+                type="submit"
+                aria-label="subscribe-button"
+              >
+                Subscribe
+                <svg class="icon-send" width="24" height="20">
+                  <use
+                    href="./images/icons.svg/symbol-defs.svg#icon-send"
+                  ></use>
+                </svg>
               </button>
             </span>
           </form>
@@ -650,32 +663,39 @@
           </svg>
         </button>
         <div class="modal-container">
+          <p class="modal-header">
+            Leave your contacts and we will call you back
+          </p>
           <form action="modal-form-group" name="call-back" autocomplete="off">
             <div class="modal-active-form">
-              <label for="name">Name</label>
-              <input class="fullwidth" type="text" name="name" />
+              <label class="modal-lable" for="name">Name</label>
+              <input class="modal-input" type="text" name="name" />
             </div>
             <div class="modal-active-form">
-              <label for="tel">Phone</label>
-              <input class="fullwidth" type="tel" name="tel" />
+              <label class="modal-lable" for="tel">Phone</label>
+              <input class="modal-input" type="tel" name="tel" />
             </div>
             <div class="modal-active-form">
-              <label for="mail">Email</label>
-              <input class="fullwidth" type="e-mail" name="mail" />
+              <label class="modal-lable" for="mail">Email</label>
+              <input class="modal-input" type="e-mail" name="mail" />
             </div>
-            <textarea class="fullwidth" name="comment" id="checkbox cols="30" rows="10"> </textarea>
+            <label class="modal-lable" for="textarea">Comment</label>
+            <textarea
+              class="textarea-input"
+              name="comment"
+              placeholder="Text input"
+            ></textarea>
+
             <div class="checkbox-wrapped">
               <input class="visually-hidden" type="checkbox" />
-              <label for="checkbox"
-              >I accept the terms and conditions of the Privacy Policy</label
-            >
+              <label class="modal-lable" for="checkbox"
+                >I accept the terms and conditions of the Privacy Policy</label
+              >
             </div>
 
-            <button type="submit"></button>
-          </form>          
+            <button class="button send-button" type="submit">Send</button>
+          </form>
         </div>
-
-
       </div>
     </div>
     <script src="./js/modal.js"></script>
