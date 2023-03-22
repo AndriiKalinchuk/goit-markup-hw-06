@@ -634,8 +634,8 @@ img {
   left: 50%;
 
   display: flex;
-  width: 408px;
-  height: 576px;
+  max-width: 408px;
+  max-height: 584px;
   opacity: 1;
   background: var(--modal-background-color);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -661,6 +661,11 @@ img {
   background-color: var(--accent-color);
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  width: 24px;
+  height: 24px;
+  align-items: center;
+  justify-content: center;
   transition: background-color var(--transition-time) var(--cubic);
 }
 
@@ -670,9 +675,6 @@ img {
 }
 
 .close-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
   fill: var(--dark-color);
   transition: fill var(--transition-time) var(--cubic);
 }
@@ -683,15 +685,16 @@ img {
 }
 
 .modal-container {
-  margin-top: 72px;
-  margin-right: 24px;
-  margin-left: 24px;
+  padding-top: 72px;
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-bottom: 24px;
 }
 
 .modal-header {
   font-weight: 500;
   text-align: center;
-  margin-bottom: 12px;
+  padding-bottom: 12px;
 }
 
 .modal-form-group {
@@ -706,11 +709,14 @@ img {
 
 .modal-lable {
   font-size: 12px;
-  line-height: 1.17;
+  line-height: 1.16;
+  padding-top: 12px;
+  padding-bottom: 20px;
   color: var(--lightslate-color);
 }
 
 .modal-lable > a {
+  line-height: 1.3;
   text-decoration: underline;
   color: var(--primary-brand-color);
 }
@@ -735,7 +741,6 @@ img {
   outline: transparent;
   padding-left: 16px;
   padding-top: 8px;
-  margin-bottom: 4px;
 }
 
 .modal-input:focus,
@@ -783,6 +788,7 @@ img {
 .checkbox {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   max-width: 460px;
 }
 
@@ -800,6 +806,7 @@ img {
   height: 16px;
   position: relative;
   right: 12px;
+  bottom: 5px;
 }
 
 .checkbox-input:checked + .checkbox-custom {
@@ -825,7 +832,6 @@ img {
   justify-content: center;
   width: 169px;
   height: 56px;
-  margin-top: 14px;
   padding: 16px 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: var(--white-color);
