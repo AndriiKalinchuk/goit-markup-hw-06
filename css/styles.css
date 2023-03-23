@@ -694,7 +694,7 @@ img {
 .modal-header {
   font-weight: 500;
   text-align: center;
-  padding-bottom: 12px;
+  margin-bottom: 16px;
 }
 
 .modal-form-group {
@@ -704,14 +704,13 @@ img {
 
 .modal-active-form {
   position: relative;
-  padding-bottom: 1px;
+  margin-bottom: 8px;
 }
 
 .modal-lable {
   font-size: 12px;
   line-height: 1.16;
-  padding-top: 12px;
-  padding-bottom: 20px;
+  margin-bottom: 4px;
   color: var(--lightslate-color);
 }
 
@@ -728,7 +727,7 @@ img {
   border-color: rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   outline: transparent;
-  padding-left: 38px;
+  padding: 0 0 0 38px;
   transition: border-color var(--transition-time) var(--cubic);
 }
 
@@ -739,8 +738,7 @@ img {
   border-color: rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   outline: transparent;
-  padding-left: 16px;
-  padding-top: 8px;
+  padding: 8px 0 0 16px;
 }
 
 .modal-input:focus,
@@ -790,6 +788,8 @@ img {
   align-items: center;
   justify-content: center;
   max-width: 460px;
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
 
 .is-hidden {
@@ -806,7 +806,7 @@ img {
   height: 16px;
   position: relative;
   right: 12px;
-  bottom: 5px;
+  bottom: 1px;
 }
 
 .checkbox-input:checked + .checkbox-custom {
@@ -824,6 +824,18 @@ img {
   transform: translate(-50%, -50%);
   opacity: 0;
   background-color: var(--pressed-state-color);
+}
+
+.chekbox-lable {
+  font-size: 12px;
+  line-height: 1.16;
+  color: var(--lightslate-color);
+}
+
+.chekbox-lable > a {
+  line-height: 1.3;
+  text-decoration: underline;
+  color: var(--primary-brand-color);
 }
 
 .button.send-button {
