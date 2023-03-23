@@ -776,9 +776,9 @@ img {
   transition: fill var(--transition-time) var(--cubic);
 }
 
-.modal-active-form:focus-within > .icon-person,
-.modal-active-form:focus-within > .icon-phone,
-.modal-active-form:focus-within > .icon-email {
+.modal-input:focus-within + .icon-person,
+.modal-input:focus-within + .icon-phone,
+.modal-input:focus-within + .icon-email {
   fill: var(--primary-brand-color);
   border-color: var(--primary-brand-color);
 }
